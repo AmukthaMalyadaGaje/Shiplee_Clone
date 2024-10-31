@@ -12,15 +12,13 @@ import {
 const HeroSection = ({ darkMode }) => {
   return (
     <section
-      className={`${
-        darkMode
-          ? "bg-black-700 text-white p-8 pb-30"
-          : "bg-blue-700 text-white p-8 pb-30"
-      }`}
+      className={`p-8 pb-30 ${
+        darkMode ? "bg-black text-white" : "bg-blue-700 text-white"
+      } rounded-lg shadow`}
     >
       <div className="flex flex-col md:flex-row items-center justify-between pb-20">
         <div className="md:w-1/2 mb-6 md:mb-0">
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-3xl lg:text-4xl font-bold mb-4">
             Join the Shiplee Franchise: Earn Rs.30,000 Per Month
           </h1>
           <ul className="space-y-2">
@@ -55,7 +53,7 @@ const HeroSection = ({ darkMode }) => {
             </li>
           </ul>
         </div>
-        <div className="md:w-1/2 bg-white text-black p-8  rounded-lg shadow-lg">
+        <div className="md:w-1/2 bg-white text-black p-8 rounded-lg shadow-lg mt-6 md:mt-0">
           <h2 className="text-2xl font-bold mb-4">
             Start Your Journey with Shiplee
           </h2>
@@ -103,8 +101,8 @@ const HeroSection = ({ darkMode }) => {
           </p>
         </div>
       </div>
-      <div className="w-full grid grid-cols-1 p-10 md:grid-cols-3 gap-4">
-        <div className="bg-white text-black p-8 rounded-md text-center shadow-lg">
+      <div className="w-full grid grid-cols-1 p-6 sm:p-10 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="bg-white text-black p-4 rounded-md text-center shadow-lg transform transition-transform duration-300 hover:-translate-y-1">
           <div className="text-4xl mb-2">
             <FaRocket />
           </div>
@@ -114,7 +112,7 @@ const HeroSection = ({ darkMode }) => {
             income and comprehensive support.
           </p>
         </div>
-        <div className="bg-white text-black p-4 rounded-md text-center shadow-lg">
+        <div className="bg-white text-black p-4 rounded-md text-center shadow-lg transform transition-transform duration-300 hover:-translate-y-1">
           <div className="text-4xl mb-2">
             <FaBriefcase />
           </div>
@@ -124,12 +122,11 @@ const HeroSection = ({ darkMode }) => {
             the more you earn!
           </p>
         </div>
-        <div className="bg-white text-black  p-4 rounded-md text-center shadow-lg">
+        <div className="bg-white text-black p-4 rounded-md text-center shadow-lg transform transition-transform duration-300 hover:-translate-y-1">
           <div className="text-4xl mb-2">
             <FaHandsHelping />
           </div>
-          hover:shadow-lg transition-shadow duration-300
-          <h2 className="text-xl font-bold mb-2 ">Dedicated Support</h2>
+          <h2 className="text-xl font-bold mb-2">Dedicated Support</h2>
           <p>
             Receive dedicated support and training to ensure your success as a
             Shiplee franchisee.
