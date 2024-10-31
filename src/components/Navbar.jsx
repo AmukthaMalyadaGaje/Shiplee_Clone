@@ -59,7 +59,11 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
         Menu
       </button>
       {isOpen && (
-        <ul className="absolute top-16 left-0 w-full bg-blue-700 text-white flex flex-col items-center space-y-4 py-4 md:hidden">
+        <ul
+          className={`absolute top-16 left-0 w-full ${
+            darkMode ? "bg-black " : "bg-blue-700"
+          } text-white flex flex-col items-center space-y-4 py-4 md:hidden`}
+        >
           <li>
             <a href="#" className="hover:text-yellow-500">
               Home
