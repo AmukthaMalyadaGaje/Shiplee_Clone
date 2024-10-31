@@ -41,7 +41,7 @@ const App = () => {
         <HeroSection darkMode={darkMode} />
         <Accordion darkMode={darkMode} />
         <BenefitsTable darkMode={darkMode} />
-        <PartnerNetwork />
+        <PartnerNetwork darkMode={darkMode} />
       </div>
       {showScrollToTop && <ScrollToTopButton />}
     </div>

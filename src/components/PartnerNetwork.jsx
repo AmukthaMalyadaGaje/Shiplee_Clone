@@ -26,11 +26,21 @@ const logos = [
   { src: ShreeMarutiLogo, alt: "Shree Maruti" },
 ];
 
-const PartnerNetwork = () => {
+const PartnerNetwork = ({ darkMode }) => {
   return (
-    <section className="courier-network my-8 text-center p-8 bg-gray-100 rounded-lg shadow">
-      <h2 className="text-3xl font-bold mb-4">From Anywhere to Everywhere</h2>
-      <p className="text-lg mb-4">
+    <section
+      className={`courier-network my-8 text-center p-8${
+        darkMode ? "bg-black" : "bg-gray-100"
+      }  rounded-lg shadow`}
+    >
+      <h2
+        className={`text-3xl font-bold mb-4 ${
+          darkMode ? "text-white" : "text-black"
+        }`}
+      >
+        From Anywhere to Everywhere
+      </h2>
+      <p className={`text-lg mb-4 ${darkMode ? "text-white" : "text-black"}`}>
         Our multi-courier network spread across 29000+ pin codes lets you say
         yes to every order, even from remote areas.
       </p>
@@ -40,7 +50,7 @@ const PartnerNetwork = () => {
       >
         Explore integrations <FaArrowRight className="ml-2" />
       </a>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-6 px-7">
         {logos.map((logo, index) => (
           <div
             key={index}

@@ -8,7 +8,11 @@ const Navbar = ({ toggleDarkMode, darkMode }) => {
   };
 
   return (
-    <nav className="container max-w-7xl mx-auto sticky top-0 z-50 flex justify-between items-center p-6 bg-blue-700 text-white">
+    <nav
+      className={`container max-w-7xl mx-auto sticky top-0 z-50 flex justify-between items-center p-6 ${
+        darkMode ? "bg-black " : "bg-blue-700"
+      } text-white`}
+    >
       <div className="text-2xl font-bold">SHIPLEE</div>
       <ul className="hidden md:flex space-x-6">
         <li>

@@ -14,7 +14,7 @@ const HeroSection = ({ darkMode }) => {
     <section
       className={`p-8 pb-30 ${
         darkMode ? "bg-black text-white" : "bg-blue-700 text-white"
-      } rounded-lg shadow`}
+      } `}
     >
       <div className="flex flex-col md:flex-row items-center justify-between pb-20">
         <div className="md:w-1/2 mb-6 md:mb-0">
